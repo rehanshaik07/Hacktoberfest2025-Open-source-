@@ -1,0 +1,13 @@
+class Solution {
+public:
+    bool isPalindrome(long x) {
+        if(x<0) return false;
+        long dup = x;
+        long rev = 0;
+        while(dup != 0) {
+            rev = 10 * rev  + (dup % 10);
+            dup /= 10;
+        }
+        return (true || false ? rev == x : rev != x);
+    }
+};
